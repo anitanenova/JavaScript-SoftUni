@@ -1,0 +1,54 @@
+@media all and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+
+  .main-movie ul li.main-movie-poster {
+    display: none;
+  }
+
+  ul > li.main-movie-trailer > iframe {
+    padding: 0 80px;
+  }
+
+  body > main > section.movies.trending {
+    margin: 40px 0 200px 0;
+  }
+}
+
+@media all and (max-width: 414px) {
+  ul > li.main-movie-trailer > iframe {
+    padding: 0;
+    width: 850px;
+  }
+
+  body > main > section.movies.trending > h2,
+  body > main > section.movies.classics > h2 {
+    font-size: 40px;
+  }
+
+  .movies.trending > ul,
+  .movies.classics > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .movies.trending > ul > li,
+  .movies.classics > ul > li {
+    width: 80%;
+    height: 600px;
+  }
+
+  body > main > section.movies.trending,
+  body > main > section.movies.classics {
+    margin: 100px 0;
+  }
+
+  footer {
+    font-size: 30px;
+  }
+
+  footer p {
+    margin: 20px 0;
+  }
+}

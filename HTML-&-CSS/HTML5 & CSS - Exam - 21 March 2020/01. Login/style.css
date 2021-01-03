@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(image.jpg);
+  display: flex;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.login-title {
+  text-transform: uppercase;
+  font-size: 34px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.username,
+.password {
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 20px;
+  outline: none;
+}
+
+.submit {
+  background-color: #d41872;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  margin: 15px 0 5px 0;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+}
+
+form div i {
+  margin: 0 30px;
+  font-size: 20px;
+  color: gray;
+}
