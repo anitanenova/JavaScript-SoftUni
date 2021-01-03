@@ -1,0 +1,66 @@
+.popup {
+  position: relative;
+
+  &__trigger {
+    &:hover {
+      cursor: pointer;
+
+      + .popup__bubble {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+        transition: transform 0.4s, opacity 0.5s ease-out;
+        transform-origin: bottom center;
+      }
+    }
+  }
+
+  &__bubble {
+    box-shadow: $primary-shadow;
+
+    @include horizontal-center-absolute;
+
+    min-width: 450px;
+    position: absolute;
+    bottom: 40px;
+    padding: 15px;
+    z-index: 1;
+    background-color: #fff;
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+
+    &:after {
+      @include horizontal-center-absolute;
+
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #fff;
+      position: relative;
+      top: 30px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: $gray-500;
+    border-bottom: 1px solid $gray-200;
+    padding: 10px 0;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &__label {
+    margin-right: 20px;
+  }
+
+  &__info {
+    margin: 0 auto;
+  }
+}
