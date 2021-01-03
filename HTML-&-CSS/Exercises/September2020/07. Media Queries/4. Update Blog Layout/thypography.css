@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(238, 238, 238);
+  margin: 0 auto 80px auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1,
+h3 {
+  font-family: 1em/1.2 Georgia, serif;
+}
+
+@media all and (max-width: 1200px) {
+  body {
+    max-width: 80%;
+  }
+}
+
+@media all and (max-width: 765px) {
+  body {
+    justify-content: center;
+  }
+}

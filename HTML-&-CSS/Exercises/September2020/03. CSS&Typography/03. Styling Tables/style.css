@@ -1,0 +1,27 @@
+.table-population > tbody > tr:nth-child(odd) {
+  background: rgb(241, 241, 241);
+}
+
+.table-population > tbody > td:nth-child(odd) {
+  background: rgb(241, 241, 241);
+}
+
+.table-population > thead {
+  background-color: #cccccc;
+  text-align: left;
+}
+
+table,
+tr,
+td {
+  border: 1px solid rgb(221, 221, 221);
+  border-spacing: 0px;
+}
+
+table {
+  width: 100%;
+}
+table tr:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}

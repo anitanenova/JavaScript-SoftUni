@@ -1,0 +1,54 @@
+div,
+section {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  flex-wrap: wrap;
+}
+
+.week * {
+  box-sizing: border-box;
+  text-align: center;
+  height: 140px;
+  padding: 15px;
+}
+
+div.container {
+  max-width: 65vw;
+}
+
+h3 {
+  flex-basis: 100%;
+  border: 1px solid black;
+  margin: 0;
+}
+
+section span {
+  border: 1px solid black;
+}
+
+section.week span {
+  flex-basis: 20%;
+}
+
+section.week span:nth-of-type(6) {
+  flex-basis: 50%;
+}
+
+section.week span:last-child {
+  flex-basis: 50%;
+}
+
+section.notes {
+  flex-direction: column;
+  text-align: center;
+}
+
+.notes > span {
+  text-transform: uppercase;
+  flex-basis: 248px;
+  width: 100%;
+  padding: 15px;
+}
