@@ -1,6 +1,7 @@
 @import "../styles/generic/generic-normalize";
 
 @import "../styles/settings/settings-colors";
+@import "../styles/settings/settings-breakpoints";
 
 @import "../styles/objects/objects-containers";
 
@@ -8,5 +9,10 @@
 
 @import "../styles/pages/simple-grid";
 @import "../styles/pages/basic-blog-layout";
+@import "../styles/pages/grid-named-areas";
+@import "../styles/pages/grid-areas-media-queries";
+@import "../styles/pages/colorful-statistic-diagram";
+@import "../styles/pages/grid-chess-board";
+@import "../styles/pages/grid-gallery";
 
 @import "../styles/utilities/utilities-padding";
