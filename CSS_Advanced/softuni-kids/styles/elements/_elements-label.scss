@@ -1,0 +1,29 @@
+.label {
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12),
+    0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  width: fit-content;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  min-width: fit-content;
+
+  &--gray {
+    background: $gray-800;
+  }
+
+  &--purple {
+    background: $violet-500;
+  }
+
+  &--orange {
+    background: $secondary-800;
+  }
+}
