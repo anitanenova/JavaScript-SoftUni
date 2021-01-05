@@ -1,0 +1,58 @@
+.main-header {
+  box-shadow: $primary-shadow;
+
+  .page-content-wrapper {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px;
+    grid-template-rows: 75px;
+    align-items: center;
+  }
+
+  &__arrow-and-logo-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  &__nav {
+    justify-self: flex-end;
+    margin-right: 35px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    width: min-content;
+
+    &-item {
+      margin: 0 12px;
+    }
+
+    &-item-link {
+      color: $gray-700;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        cursor: pointer;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  &__search-and-login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 32px;
+    width: min-content;
+  }
+
+  &__search {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
