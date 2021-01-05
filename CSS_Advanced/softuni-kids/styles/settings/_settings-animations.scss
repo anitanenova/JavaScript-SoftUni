@@ -7,3 +7,12 @@
     opacity: 1;
   }
 }
+
+@keyframes change-color-grey-to-secondary {
+  from {
+    color: $gray-700;
+  }
+  to {
+    color: $secondary-color;
+  }
+}

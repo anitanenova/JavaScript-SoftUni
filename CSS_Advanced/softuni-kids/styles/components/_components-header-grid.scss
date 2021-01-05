@@ -12,6 +12,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__nav {
@@ -36,7 +40,7 @@
 
       &:hover {
         cursor: pointer;
-        color: $secondary-color;
+        animation: change-color-grey-to-secondary 0.3s ease-out forwards;
       }
     }
   }
