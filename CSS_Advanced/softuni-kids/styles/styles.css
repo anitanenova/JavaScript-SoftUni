@@ -302,6 +302,29 @@ summary {
   }
 }
 
+.border {
+  background-size: contain;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.border-vertical {
+  background-repeat: repeat-y;
+}
+
+.border-vertical--primary {
+  background-image: url("../../assets/icons/dot-vertical.png");
+}
+
+.border-horizontal {
+  background-repeat: repeat-x;
+}
+
+.border-horizontal--primary {
+  background-image: url("../../assets/icons/dot-horizontal.png");
+}
+
 .container {
   max-width: 1250px;
   width: 100%;
@@ -405,15 +428,23 @@ ol[class] {
 }
 
 .label--gray {
-  background: #676781;
+  background-color: #676781;
 }
 
 .label--purple {
-  background: #9a5dc6;
+  background-color: #9a5dc6;
+}
+
+.label--orange-light {
+  background-color: #ffc20a;
 }
 
 .label--orange {
-  background: #ff9100;
+  background-color: #ff9100;
+}
+
+.label--gray-dark {
+  background-color: #35364d;
 }
 
 html {
@@ -1167,6 +1198,141 @@ button {
   margin-top: 0;
 }
 
+.home-main__program {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto 110px auto 110px auto 110px auto;
+      grid-template-rows: auto auto 110px auto 110px auto 110px auto;
+  grid-row-gap: 15px;
+  justify-items: center;
+}
+
+.home-main__program-title--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
+  grid-column-gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.home-main__program-title--blue {
+  color: #44a9f8;
+}
+
+.home-main__program-title--green {
+  color: #00af9b;
+}
+
+.home-main__program-title-icon {
+  margin: 0 auto;
+}
+
+.home-main__program-vertical-border {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.home-main__program-horizontal-border {
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.home-main__program__box {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-main__program__box--big {
+  max-width: 615px;
+  -ms-grid-rows: 45px 1fr;
+      grid-template-rows: 45px 1fr;
+  grid-row-gap: 30px;
+}
+
+.home-main__program__box--normal {
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  max-width: 410px;
+  grid-row-gap: 15px;
+}
+
+.home-main__program__box--normal .home-main__program__box-title {
+  margin: 0 auto;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.home-main__program__box--small {
+  max-width: 135px;
+}
+
+.home-main__program__box--small .home-main__program__box-title {
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.home-main__program__box--blue {
+  background-color: #44a9f8;
+}
+
+.home-main__program__box--blue-100 {
+  background-color: #bce0fc;
+}
+
+.home-main__program__box--blue-300 {
+  background-color: #66b9f8;
+}
+
+.home-main__program__box-title {
+  color: #ffffff;
+}
+
+.home-main__program__box--primary-100 {
+  background-color: #b0e3dc;
+}
+
+.home-main__program__box--primary-200 {
+  background-color: #7cd1c5;
+}
+
+.home-main__program__box--primary-300 {
+  background-color: #41bead;
+}
+
+.home-main__program__boxes--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 135px 135px 135px 135px;
+      grid-template-columns: 135px 135px 135px 135px;
+  grid-column-gap: 15px;
+  -ms-grid-rows: 85px;
+      grid-template-rows: 85px;
+}
+
+.home-main__program-description {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
 .popup {
   position: relative;
 }
@@ -1432,6 +1598,28 @@ button {
   border: 4px solid #41bead;
   width: 100%;
   height: 100%;
+}
+
+.home-main__programs .page-content-wrapper {
+  margin: 95px auto;
+}
+
+.home-main__programs-info {
+  width: 830px;
+  margin: 0 auto 65px auto;
+}
+
+.home-main__programs-info-title {
+  color: #41bead;
+  margin: 0 auto 32px auto;
+}
+
+.home-main__programs-preview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 13px 1fr;
+      grid-template-columns: 1fr 13px 1fr;
+  grid-column-gap: 25px;
 }
 
 .home-main__accomplishment {

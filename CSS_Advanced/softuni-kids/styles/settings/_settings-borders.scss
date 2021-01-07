@@ -1,0 +1,21 @@
+.border {
+  background-size: contain;
+  box-sizing: border-box;
+  display: block;
+
+  &-vertical {
+    background-repeat: repeat-y;
+
+    &--primary {
+      background-image: url("../../assets/icons/dot-vertical.png");
+    }
+  }
+
+  &-horizontal {
+    background-repeat: repeat-x;
+
+    &--primary {
+      background-image: url("../../assets/icons/dot-horizontal.png");
+    }
+  }
+}

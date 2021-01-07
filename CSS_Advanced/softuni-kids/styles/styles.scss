@@ -6,6 +6,7 @@
 @import "../styles/settings/settings-animations";
 @import "../styles/settings/settings-mixins";
 @import "../styles/settings/settings-radius";
+@import "../styles/settings/settings-borders";
 
 @import "../styles/objects/objects-containers";
 @import "../styles/objects/objects-wrappers";
@@ -22,7 +23,8 @@
 @import "../styles/components/components-footer";
 @import "../styles/components/components-header";
 @import "../styles/components/components-navigation";
-@import "../styles/components/components-program";
+@import "../styles/components/components-program-cards";
+@import "../styles/components/components-program-table";
 @import "../styles/components/components-popup";
 @import "../styles/components/components-title";
 @import "../styles/components/components-header-grid";

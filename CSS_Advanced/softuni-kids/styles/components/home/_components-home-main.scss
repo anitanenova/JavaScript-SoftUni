@@ -61,4 +61,26 @@
     width: 100%;
     height: 100%;
   }
+
+  &__programs {
+    .page-content-wrapper {
+      margin: 95px auto;
+    }
+
+    &-info {
+      width: 830px;
+      margin: 0 auto 65px auto;
+    }
+
+    &-info-title {
+      color: $primary-300;
+      margin: 0 auto 32px auto;
+    }
+
+    &-preview {
+      display: grid;
+      grid-template-columns: 1fr 13px 1fr;
+      grid-column-gap: 25px;
+    }
+  }
 }

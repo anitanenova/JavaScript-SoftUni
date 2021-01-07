@@ -16,14 +16,22 @@
   min-width: fit-content;
 
   &--gray {
-    background: $gray-800;
+    background-color: $gray-800;
   }
 
   &--purple {
-    background: $violet-500;
+    background-color: $violet-500;
+  }
+
+  &--orange-light {
+    background-color: $secondary-500;
   }
 
   &--orange {
-    background: $secondary-800;
+    background-color: $secondary-800;
+  }
+
+  &--gray-dark {
+    background-color: $gray-dark;
   }
 }
