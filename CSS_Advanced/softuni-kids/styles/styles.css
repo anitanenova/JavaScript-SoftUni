@@ -1424,6 +1424,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 70px;
 }
 
 .home-main__about-video {
@@ -1439,6 +1440,7 @@ button {
 
 .home-main__accomplishment .page-content-wrapper {
   width: 1290px;
+  padding-top: 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 320px 10px 1fr;
@@ -1458,14 +1460,14 @@ button {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   position: absolute;
-  top: -95px;
+  top: -80px;
 }
 
 .home-main__accomplishment-details {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 240px 200px 1fr;
-      grid-template-columns: 240px 200px 1fr;
+  -ms-grid-columns: 240px 220px 1fr;
+      grid-template-columns: 240px 220px 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-column-gap: 25px;
@@ -1530,12 +1532,41 @@ button {
   width: max-content;
 }
 
+.home-main__accomplishment-dots {
+  position: relative;
+  top: 3px;
+}
+
 .home-main__accomplishment-dot {
-  width: 5px;
-  height: 5px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background-color: red;
-  position: absolute;
+  display: block;
+  margin-bottom: 7px;
+  -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-main__accomplishment-dot:nth-child(1), .home-main__accomplishment-dot:nth-child(2), .home-main__accomplishment-dot:nth-child(3), .home-main__accomplishment-dot:nth-child(4) {
+  background-color: #41bead;
+}
+
+.home-main__accomplishment-dot:nth-child(5) {
+  background-color: #ffb402;
+}
+
+.home-main__accomplishment-dot:nth-child(6), .home-main__accomplishment-dot:nth-child(7), .home-main__accomplishment-dot:nth-child(8), .home-main__accomplishment-dot:nth-child(9) {
+  background-color: #ff9100;
+}
+
+.home-main__accomplishment-dot:first-child {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.home-main__accomplishment-dot:last-child {
+  -webkit-box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.14), inset 0px 3px 4px rgba(0, 0, 0, 0.12), inset 0px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
 .centered {
