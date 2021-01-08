@@ -1,0 +1,39 @@
+.home-main__skills {
+  .page-content-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 65px;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 740px;
+    align-self: end;
+
+    &-title {
+      color: $primary-300;
+      margin: 0 auto 32px auto;
+    }
+
+    &-text {
+      color: $gray-700;
+      margin: 0;
+    }
+  }
+
+  &__preview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 70px;
+    align-items: baseline;
+    align-self: start;
+
+    &-item-title {
+      color: $gray-500;
+      width: max-content;
+    }
+  }
+}
