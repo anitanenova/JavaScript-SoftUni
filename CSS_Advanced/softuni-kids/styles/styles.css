@@ -588,6 +588,7 @@ p {
   font-style: normal;
   font-weight: normal;
   line-height: 20px;
+  font-size: 14px;
 }
 
 a,
@@ -1522,8 +1523,8 @@ button {
 .home-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px 330px;
-      grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px;
+  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px 330px 516px;
+      grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px 516px;
 }
 
 .home-main__welcome-section {
@@ -1674,6 +1675,45 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.home-main__awards {
+  margin: 110px auto;
+}
+
+.home-main__awards .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-row-gap: 50px;
+  height: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.home-main__awards__title {
+  margin: 0 auto;
+}
+
+.home-main__awards__title, .home-main__awards__award-title {
+  color: #41bead;
+}
+
+.home-main__awards--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 32px;
+}
+
+.home-main__awards__award__border {
+  height: 3px;
+  width: 96px;
+  background-color: #41bead;
+  margin: 24px auto;
 }
 
 .home-main__accomplishment {

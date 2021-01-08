@@ -1,6 +1,6 @@
 .home-main {
   display: grid;
-  grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px;
+  grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px 516px;
 
   &__welcome-section {
     background-image: url("../../assets/images/main-kids.jpg");
@@ -123,6 +123,39 @@
 
     &__button {
       width: fit-content;
+    }
+  }
+
+  &__awards {
+    margin: 110px auto;
+    .page-content-wrapper {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-row-gap: 50px;
+      height: 100%;
+      align-items: baseline;
+    }
+
+    &__title {
+      margin: 0 auto;
+    }
+
+    &__title,
+    &__award-title {
+      color: $primary-300;
+    }
+
+    &--wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 32px;
+    }
+
+    &__award__border {
+      height: 3px;
+      width: 96px;
+      background-color: $primary-300;
+      margin: 24px auto;
     }
   }
 }
