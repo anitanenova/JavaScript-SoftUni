@@ -1523,8 +1523,8 @@ button {
 .home-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px 330px 516px;
-      grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px 516px;
+  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px 330px 516px 500px;
+      grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px 516px 500px;
 }
 
 .home-main__welcome-section {
@@ -1714,6 +1714,42 @@ button {
   width: 96px;
   background-color: #41bead;
   margin: 24px auto;
+}
+
+.home-main__gallery .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  grid-row-gap: 35px;
+}
+
+.home-main__gallery__title {
+  color: #41bead;
+  margin: 0 auto;
+}
+
+.home-main__gallery__preview {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.home-main__gallery-image {
+  border-radius: 12px;
+}
+
+.home-main__gallery__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .home-main__accomplishment {
