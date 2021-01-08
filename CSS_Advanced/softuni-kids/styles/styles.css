@@ -491,27 +491,27 @@ h6 {
   font-size: 16px;
 }
 
-h1-like {
+.h1-like {
   font-size: 36px;
 }
 
-h2-like {
+.h2-like {
   font-size: 30px;
 }
 
-h3-like {
+.h3-like {
   font-size: 24px;
 }
 
-h4-like {
+.h4-like {
   font-size: 20px;
 }
 
-h5-like {
+.h5-like {
   font-size: 18px;
 }
 
-h6-like {
+.h6-like {
   font-size: 16px;
 }
 
@@ -539,27 +539,27 @@ h6 {
   line-height: 20px;
 }
 
-h1-like {
+.h1-like {
   line-height: 44px;
 }
 
-h2-like {
+.h2-like {
   line-height: 36px;
 }
 
-h3-like {
+.h3-like {
   line-height: 30px;
 }
 
-h4-like {
+.h4-like {
   line-height: 24px;
 }
 
-h5-like {
+.h5-like {
   line-height: 20px;
 }
 
-h6-like {
+.h6-like {
   line-height: 18px;
 }
 
@@ -1522,8 +1522,8 @@ button {
 .home-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 490px 565px 1210px 485px;
-      grid-template-rows: 490px 565px 1210px 485px;
+  -ms-grid-rows: 490px 565px 1210px 485px 170px;
+      grid-template-rows: 490px 565px 1210px 485px 170px;
 }
 
 .home-main__welcome-section {
@@ -1643,6 +1643,37 @@ button {
       -ms-flex-align: center;
           align-items: center;
   color: #9a5dc6;
+}
+
+.home-main__trainings {
+  color: #ffffff;
+  background-color: #41bead;
+}
+
+.home-main__trainings .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 635px 1fr;
+      grid-template-columns: 635px 1fr;
+  grid-column-gap: 125px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.home-main__trainings__description-title {
+  margin: 0 auto 15px auto;
+}
+
+.home-main__trainings__description-text {
+  margin: 0;
+}
+
+.home-main__trainings__button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .home-main__accomplishment {

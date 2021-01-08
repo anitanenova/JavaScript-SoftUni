@@ -1,6 +1,6 @@
 .home-main {
   display: grid;
-  grid-template-rows: 490px 565px 1210px 485px;
+  grid-template-rows: 490px 565px 1210px 485px 170px;
 
   &__welcome-section {
     background-image: url("../../assets/images/main-kids.jpg");
@@ -98,6 +98,31 @@
       grid-column-gap: 25px;
       align-items: center;
       color: $purple-400;
+    }
+  }
+
+  &__trainings {
+    color: #ffffff;
+    background-color: $primary-300;
+
+    .page-content-wrapper {
+      display: grid;
+      grid-template-columns: 635px 1fr;
+      grid-column-gap: 125px;
+      align-items: center;
+      height: 100%;
+    }
+
+    &__description-title {
+      margin: 0 auto 15px auto;
+    }
+
+    &__description-text {
+      margin: 0;
+    }
+
+    &__button {
+      width: fit-content;
     }
   }
 }

@@ -31,12 +31,12 @@ h6,
 @each $header,
   $size
     in (
-      h1-like: 36px,
-      h2-like: 30px,
-      h3-like: 24px,
-      h4-like: 20px,
-      h5-like: 18px,
-      h6-like: 16px
+      ".h1-like": 36px,
+      ".h2-like": 30px,
+      ".h3-like": 24px,
+      ".h4-like": 20px,
+      ".h5-like": 18px,
+      ".h6-like": 16px
     )
 {
   #{$header} {
@@ -55,12 +55,12 @@ h6,
 @each $header,
   $height
     in (
-      h1-like: 44px,
-      h2-like: 36px,
-      h3-like: 30px,
-      h4-like: 24px,
-      h5-like: 20px,
-      h6-like: 18px
+      ".h1-like": 44px,
+      ".h2-like": 36px,
+      ".h3-like": 30px,
+      ".h4-like": 24px,
+      ".h5-like": 20px,
+      ".h6-like": 18px
     )
 {
   #{$header} {
