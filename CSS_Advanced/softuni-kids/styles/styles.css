@@ -1522,8 +1522,8 @@ button {
 .home-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px;
-      grid-template-rows: 490px 565px 1210px 485px 170px 505px;
+  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px 330px;
+      grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px;
 }
 
 .home-main__welcome-section {
@@ -1853,6 +1853,7 @@ button {
           align-items: baseline;
   -ms-grid-row-align: start;
       align-self: start;
+  justify-items: center;
 }
 
 .home-main__skills__preview-item-title {
@@ -1860,6 +1861,98 @@ button {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.home-main__testimonials {
+  background-color: #41bead;
+  color: #ffffff;
+}
+
+.home-main__testimonials .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 215px 1fr;
+      grid-template-columns: 215px 1fr;
+  grid-column-gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.home-main__testimonials__image--wrapper {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.home-main__testimonials__image {
+  border-radius: 50%;
+}
+
+.home-main__testimonials__image-decoration-purple {
+  position: absolute;
+  left: 0px;
+  top: 43px;
+  -webkit-transform: rotate(21.2deg);
+  transform: rotate(5deg);
+}
+
+.home-main__testimonials__image-decoration-yellow {
+  position: absolute;
+  left: -50px;
+  top: 220px;
+}
+
+.home-main__testimonials__image-decoration-red {
+  position: absolute;
+  left: 950px;
+  top: 40px;
+  -webkit-transform: rotate(120deg);
+  transform: rotate(0deg);
+}
+
+.home-main__testimonials__image-decoration-yellow--after-text {
+  position: absolute;
+  left: 1135px;
+  top: 275px;
+  -webkit-transform: rotate(26.02deg);
+  transform: rotate(50deg);
+}
+
+.home-main__testimonials__description-name {
+  margin: 0 auto 6px auto;
+}
+
+.home-main__testimonials__description-info {
+  margin: 0;
+}
+
+.home-main__testimonials__description-text {
+  margin: 0;
+}
+
+.home-main__testimonials__description-rating {
+  margin: 8px auto 18px auto;
+}
+
+.home-main__testimonials__btn-slider {
+  position: absolute;
+  padding: 12px 15px 10px 15px;
+}
+
+.home-main__testimonials__btn-slider-left {
+  left: -100px;
+  display: none;
+}
+
+.home-main__testimonials__btn-slider-left-arrow {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.home-main__testimonials__btn-slider-right {
+  right: -100px;
 }
 
 .centered {
