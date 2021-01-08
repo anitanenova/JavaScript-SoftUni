@@ -1522,8 +1522,8 @@ button {
 .home-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 490px 565px;
-      grid-template-rows: 490px 565px;
+  -ms-grid-rows: 490px 565px 1210px 485px;
+      grid-template-rows: 490px 565px 1210px 485px;
 }
 
 .home-main__welcome-section {
@@ -1620,6 +1620,29 @@ button {
   -ms-grid-columns: 1fr 13px 1fr;
       grid-template-columns: 1fr 13px 1fr;
   grid-column-gap: 25px;
+}
+
+.home-main__graphic-design .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 540px;
+      grid-template-columns: 1fr 540px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-main__graphic-design__description-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 32px 1fr;
+      grid-template-columns: 32px 1fr;
+  grid-column-gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9a5dc6;
 }
 
 .home-main__accomplishment {
