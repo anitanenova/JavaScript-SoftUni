@@ -101,7 +101,7 @@
 
       a:hover {
         cursor: pointer;
-        color: $primary-300;
+        animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
       }
     }
 
@@ -115,7 +115,7 @@
       }
       a:hover {
         cursor: pointer;
-        color: $primary-300;
+        animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
       }
     }
   }

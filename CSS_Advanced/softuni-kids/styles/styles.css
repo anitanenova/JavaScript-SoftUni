@@ -302,6 +302,46 @@ summary {
   }
 }
 
+@-webkit-keyframes change-color-gray-200-to-primary {
+  from {
+    color: #e6e6e6;
+  }
+  to {
+    color: #41bead;
+  }
+}
+
+@keyframes change-color-gray-200-to-primary {
+  from {
+    color: #e6e6e6;
+  }
+  to {
+    color: #41bead;
+  }
+}
+
+@-webkit-keyframes bigger {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes bigger {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 .border {
   background-size: contain;
   -webkit-box-sizing: border-box;
@@ -689,12 +729,6 @@ button {
 
 .cards--wrapper .card:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-  transition: -webkit-transform 0.5s ease-out;
-  transition: transform 0.5s ease-out;
-  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
 .cards--wrapper .card:hover .card__content,
@@ -1021,7 +1055,8 @@ button {
 
 .footer__wrapper .footer__list__item a:hover {
   cursor: pointer;
-  color: #41bead;
+  -webkit-animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
+          animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
 }
 
 .footer__wrapper .footer__list--found-us {
@@ -1038,7 +1073,8 @@ button {
 
 .footer__wrapper .footer__list--found-us a:hover {
   cursor: pointer;
-  color: #41bead;
+  -webkit-animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
+          animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
 }
 
 .footer__wrapper .footer__copyright {
@@ -1070,6 +1106,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 75px;
 }
 
 @media (max-width: 599px) {
@@ -2343,6 +2380,12 @@ button {
 }
 
 .main-footer__nav__list__item-link:hover, .main-footer__nav__list__item-icon:hover {
+  cursor: pointer;
+  -webkit-animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
+          animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
+}
+
+.main-footer__nav__list__item-link:hover, .main-footer__nav__list__item-icon:hover {
   color: #41bead;
   cursor: pointer;
 }
@@ -2386,6 +2429,12 @@ button {
 .fade-in {
   -webkit-animation: fade-in 1.5s forwards ease-out;
           animation: fade-in 1.5s forwards ease-out;
+}
+
+.bigger:hover {
+  cursor: pointer;
+  -webkit-animation: bigger 0.5s forwards ease-out;
+          animation: bigger 0.5s forwards ease-out;
 }
 
 .inline {

@@ -73,6 +73,11 @@
     color: $gray-200;
     text-decoration: none;
 
+    &:hover {
+      cursor: pointer;
+      animation: change-color-gray-200-to-primary 0.3s ease-out forwards;
+    }
+
     font-weight: 400;
 
     &:hover {
