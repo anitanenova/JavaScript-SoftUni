@@ -18,4 +18,16 @@
     background-color: $secondary-color;
     color: #ffffff;
   }
+
+  &--outlined {
+    background-color: transparent;
+    border: 1px solid $secondary-color;
+    color: $secondary-color;
+  }
+
+  &--outlined--white {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+  }
 }

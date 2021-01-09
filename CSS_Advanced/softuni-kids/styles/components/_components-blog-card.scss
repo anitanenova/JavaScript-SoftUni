@@ -1,0 +1,66 @@
+.home-main__blog__card {
+  background-color: #ffffff;
+  border-radius: $primary-radius;
+  box-shadow: $primary-shadow;
+
+  display: grid;
+  grid-template-rows: 155px auto auto;
+  grid-row-gap: 16px;
+
+  &__image {
+    width: 100%;
+    border-top-left-radius: $primary-radius;
+    border-top-right-radius: $primary-radius;
+  }
+
+  &__description {
+    display: grid;
+    grid-template-rows: 45px 12px 48px;
+    grid-row-gap: 13px;
+    padding: 0 16px;
+
+    &__title {
+      color: $secondary-color;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__date-and-time {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 25px;
+    }
+
+    &__date,
+    &__time {
+      display: grid;
+      grid-template-columns: 12px 1fr;
+      grid-column-gap: 8px;
+    }
+
+    &__date-text,
+    &__time-text {
+      color: $gray-500;
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  &__button,
+  &__description__text {
+    font-size: 14px;
+    margin: 0;
+    line-height: 16px;
+  }
+
+  &__button {
+    color: $secondary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__button-icon {
+    margin-left: 10px;
+  }
+}
