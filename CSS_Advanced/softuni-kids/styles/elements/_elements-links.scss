@@ -1,0 +1,13 @@
+.link {
+  &--secondary {
+    color: $secondary-color;
+  }
+
+  &--size-16 {
+    font-size: 16px;
+  }
+
+  &--weight-400 {
+    font-weight: 400;
+  }
+}

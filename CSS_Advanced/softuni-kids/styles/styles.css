@@ -606,6 +606,18 @@ button {
   font-weight: 800;
 }
 
+.link--secondary {
+  color: #ff9100;
+}
+
+.link--size-16 {
+  font-size: 16px;
+}
+
+.link--weight-400 {
+  font-weight: 400;
+}
+
 .btn {
   border-radius: 100px;
   border: none;
@@ -1535,8 +1547,8 @@ button {
 .home-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px 330px 516px 500px 740px;
-      grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px 516px 500px 740px;
+  -ms-grid-rows: 490px 565px 1210px 485px 170px 505px 330px 516px 500px 740px 1600px;
+      grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px 516px 500px 740px 1600px;
 }
 
 .home-main__welcome-section {
@@ -1801,6 +1813,57 @@ button {
   width: fit-content;
   -ms-grid-column-align: end;
       justify-self: end;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.home-main__more-info .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 490px;
+      grid-template-columns: 1fr 490px;
+  grid-column-gap: 60px;
+  margin: 96px auto 69px auto;
+}
+
+.home-main__more-info__images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content min-content min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+      grid-template-rows: min-content min-content min-content;
+  grid-row-gap: 30px;
+}
+
+.home-main__more-info__image {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-main__more-info__description__title {
+  margin-top: 48px;
+  color: #41bead;
+}
+
+.home-main__more-info__description__title:first-of-type {
+  margin-top: 0;
+}
+
+.home-main__more-info__description__text {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.home-main__more-info__description__text--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15px 1fr;
+      grid-template-columns: 15px 1fr;
+  grid-column-gap: 17px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .home-main__accomplishment {
