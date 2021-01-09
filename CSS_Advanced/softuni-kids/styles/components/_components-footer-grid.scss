@@ -1,0 +1,110 @@
+.main-footer {
+  background-color: $gray-700;
+  border-top: 12px solid $gray-500;
+  color: #ffffff;
+
+  .page-content-wrapper {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-column-gap: 80px;
+    height: 100%;
+  }
+
+  &__nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 170px;
+    grid-column-gap: 65px;
+    align-content: center;
+  }
+
+  &__nav__list--wrapper:first-of-type {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    .main-footer__nav__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      height: min-content;
+
+      &__item:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+      &__item:nth-child(2) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      &__item:nth-child(3) {
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+      &__item:nth-child(4) {
+        grid-column: 1/2;
+        grid-row: 4/5;
+      }
+      &__item:nth-child(5) {
+        grid-column: 1/2;
+        grid-row: 5/6;
+      }
+      &__item:nth-child(6) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      &__item:nth-child(7) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+    }
+  }
+
+  &__nav__list__title {
+    margin: 0 0 16px 0;
+    width: max-content;
+  }
+
+  &__nav__list__item {
+    margin-bottom: 12px;
+  }
+
+  &__nav__list__item-link,
+  &__nav__list__item-icon {
+    color: $gray-200;
+    text-decoration: none;
+
+    font-weight: 400;
+
+    &:hover {
+      color: $primary-300;
+      cursor: pointer;
+    }
+  }
+
+  &__nav__list__item-link {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  &__nav__list__item-icon {
+    font-size: 28px;
+    margin-right: 30px;
+  }
+
+  &__copyright {
+    color: $gray-500;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+  }
+
+  &__image--wrapper {
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+  }
+}
