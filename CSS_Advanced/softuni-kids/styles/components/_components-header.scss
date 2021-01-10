@@ -1,5 +1,6 @@
 .header {
   box-shadow: $primary-shadow;
+  z-index: 1;
 
   .page-content-wrapper {
     display: flex;
