@@ -2,9 +2,17 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: 75px 1fr 312px;
+
+  @include for-phone-only {
+    grid-template-rows: 72px 1fr 312px;
+  }
 }
 
 .page-content-wrapper {
   width: 1290px;
   margin: 0 auto;
+
+  @include for-phone-only {
+    width: 335px;
+  }
 }

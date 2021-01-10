@@ -395,9 +395,22 @@ summary {
       grid-template-rows: 75px 1fr 312px;
 }
 
+@media (max-width: 599px) {
+  .page-wrapper {
+    -ms-grid-rows: 72px 1fr 312px;
+        grid-template-rows: 72px 1fr 312px;
+  }
+}
+
 .page-content-wrapper {
   width: 1290px;
   margin: 0 auto;
+}
+
+@media (max-width: 599px) {
+  .page-content-wrapper {
+    width: 335px;
+  }
 }
 
 select {
@@ -1080,6 +1093,41 @@ button {
 .footer__wrapper .footer__copyright {
   color: #919191;
   width: 60%;
+}
+
+.header {
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .page-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header__arrow-and-logo, .header__login-and-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__arrow {
+  margin-right: 14px;
+}
+
+.header__login {
+  margin-right: 24px;
 }
 
 .header__info {
