@@ -467,9 +467,6 @@ ol[class] {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  position: relative;
-  top: 10px;
-  left: 10px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
@@ -762,6 +759,12 @@ button {
 
 .cards--wrapper .card__header--green {
   background-color: #41bead;
+}
+
+.cards--wrapper .card__label {
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 
 .cards--wrapper .card__title {
@@ -2463,6 +2466,33 @@ button {
 .main-footer__image {
   position: absolute;
   bottom: 0;
+}
+
+.course-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 302px;
+      grid-template-rows: 302px;
+}
+
+.course-main__welcome-section {
+  background-color: #44a9f8;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-main__welcome-section .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  text-align: center;
 }
 
 .centered {
