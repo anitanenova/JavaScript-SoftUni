@@ -1,6 +1,6 @@
 .course-main {
   display: grid;
-  grid-template-rows: 302px 560px 550px;
+  grid-template-rows: 302px 560px auto;
 
   &__welcome-section {
     background-color: $blue-400;
@@ -121,6 +121,18 @@
 
     &__item__text {
       color: $secondary-800;
+    }
+  }
+
+  &__about {
+    &__description {
+      margin: 0;
+    }
+
+    &__video {
+      border-radius: $primary-radius;
+      margin-top: 32px;
+      margin-bottom: 64px;
     }
   }
 }

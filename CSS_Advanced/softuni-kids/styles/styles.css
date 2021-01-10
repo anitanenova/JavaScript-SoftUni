@@ -2472,8 +2472,8 @@ button {
 .course-main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 302px 560px 550px;
-      grid-template-rows: 302px 560px 550px;
+  -ms-grid-rows: 302px 560px auto;
+      grid-template-rows: 302px 560px auto;
 }
 
 .course-main__welcome-section {
@@ -2623,6 +2623,16 @@ button {
 
 .course-main__more-info__item__text {
   color: #ff9100;
+}
+
+.course-main__about__description {
+  margin: 0;
+}
+
+.course-main__about__video {
+  border-radius: 12px;
+  margin-top: 32px;
+  margin-bottom: 64px;
 }
 
 .centered {
