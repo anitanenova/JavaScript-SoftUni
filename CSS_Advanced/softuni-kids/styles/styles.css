@@ -357,12 +357,20 @@ summary {
   background-image: url("../../assets/icons/dot-vertical.png");
 }
 
+.border-vertical--secondary--100 {
+  background-image: url("../../assets/icons/ellipse-yellow-vertical.png");
+}
+
 .border-horizontal {
   background-repeat: repeat-x;
 }
 
 .border-horizontal--primary {
   background-image: url("../../assets/icons/dot-horizontal.png");
+}
+
+.border-horizontal--secondary--100 {
+  background-image: url("../../assets/icons/ellipse-yellow-horizontal.png");
 }
 
 .container {
@@ -2476,8 +2484,8 @@ button {
 
 @media (max-width: 599px) {
   .course-main {
-    -ms-grid-rows: 302px 562px auto;
-        grid-template-rows: 302px 562px auto;
+    -ms-grid-rows: 302px 562px 970px 540px;
+        grid-template-rows: 302px 562px 970px 540px;
   }
 }
 
@@ -2506,14 +2514,70 @@ button {
   top: -65px;
 }
 
+.course-main__about .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 599px) {
+  .course-main__about .page-content-wrapper {
+    -ms-grid-rows: 740px 195px;
+        grid-template-rows: 740px 195px;
+    grid-row-gap: 32px;
+  }
+}
+
 .course-main__about__description {
   margin: 0;
 }
 
 .course-main__about__video {
   border-radius: 12px;
-  margin-top: 32px;
-  margin-bottom: 64px;
+}
+
+.course-main__about-more-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-main__about-more-info .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 599px) {
+  .course-main__about-more-info .page-content-wrapper {
+    -ms-grid-rows: auto 10px 1fr;
+        grid-template-rows: auto 10px 1fr;
+    grid-row-gap: 32px;
+  }
+}
+
+.course-main__about-more-info__title--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 16px;
+}
+
+.course-main__about-more-info__title {
+  color: #565656;
+  margin: 0 0 0 18px;
+}
+
+.course-main__about-more-info__description--wrapper {
+  margin: 0;
+}
+
+.course-main__about-more-info__description {
+  margin: 0;
 }
 
 @media (max-width: 599px) {
@@ -2655,5 +2719,13 @@ button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.margin-top--16 {
+  margin-top: 16px;
+}
+
+.margin-bottom--32 {
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=styles.css.map */

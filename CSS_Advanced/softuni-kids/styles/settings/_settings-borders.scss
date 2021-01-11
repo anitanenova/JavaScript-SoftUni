@@ -9,6 +9,10 @@
     &--primary {
       background-image: url("../../assets/icons/dot-vertical.png");
     }
+
+    &--secondary--100 {
+      background-image: url("../../assets/icons/ellipse-yellow-vertical.png");
+    }
   }
 
   &-horizontal {
@@ -16,6 +20,10 @@
 
     &--primary {
       background-image: url("../../assets/icons/dot-horizontal.png");
+    }
+
+    &--secondary--100 {
+      background-image: url("../../assets/icons/ellipse-yellow-horizontal.png");
     }
   }
 }

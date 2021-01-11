@@ -1,7 +1,7 @@
 .course-main {
   display: grid;
   @include for-phone-only {
-    grid-template-rows: 302px 562px auto;
+    grid-template-rows: 302px 562px 970px 540px;
   }
 
   &__welcome-section {
@@ -24,14 +24,54 @@
   }
 
   &__about {
+    .page-content-wrapper {
+      display: grid;
+
+      @include for-phone-only {
+        grid-template-rows: 740px 195px;
+        grid-row-gap: 32px;
+      }
+    }
+
     &__description {
       margin: 0;
     }
 
     &__video {
       border-radius: $primary-radius;
-      margin-top: 32px;
-      margin-bottom: 64px;
+    }
+  }
+
+  &__about-more-info {
+    display: flex;
+    align-items: center;
+
+    .page-content-wrapper {
+      display: grid;
+
+      @include for-phone-only {
+        grid-template-rows: auto 10px 1fr;
+        grid-row-gap: 32px;
+      }
+    }
+
+    &__title--wrapper {
+      display: flex;
+      align-items: start;
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      color: $gray-700;
+      margin: 0 0 0 18px;
+    }
+
+    &__description--wrapper {
+      margin: 0;
+    }
+
+    &__description {
+      margin: 0;
     }
   }
 }
