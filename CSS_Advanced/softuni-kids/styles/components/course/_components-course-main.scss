@@ -1,6 +1,8 @@
 .course-main {
   display: grid;
-  grid-template-rows: 302px 560px auto;
+  @include for-phone-only {
+    grid-template-rows: 302px 562px auto;
+  }
 
   &__welcome-section {
     background-color: $blue-400;
@@ -14,6 +16,11 @@
       justify-items: center;
       text-align: center;
     }
+  }
+
+  &__more-info-section {
+    position: relative;
+    top: -65px;
   }
 
   &__about {

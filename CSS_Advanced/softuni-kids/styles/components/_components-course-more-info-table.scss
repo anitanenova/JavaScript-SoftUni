@@ -1,19 +1,14 @@
-.course-main {
-  &__more-info {
-    position: relative;
-    top: -65px;
+.course-more-info-table {
+  @include for-phone-only {
+    .page-content-wrapper {
+      display: grid;
+      grid-template-rows: 145px 12px 405px;
 
-    @include for-phone-only {
-      .page-content-wrapper {
-        display: grid;
-        grid-template-rows: 145px 12px 405px;
-
-        background-color: #ffffff;
-        border-radius: $primary-radius;
-        box-shadow: $primary-shadow;
-        height: auto;
-        align-items: center;
-      }
+      background-color: #ffffff;
+      border-radius: $primary-radius;
+      box-shadow: $primary-shadow;
+      height: auto;
+      align-items: center;
     }
 
     &__button {
