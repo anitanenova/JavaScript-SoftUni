@@ -1,0 +1,7 @@
+.hidden {
+  &--for-phone {
+    @include for-phone-only {
+      display: none;
+    }
+  }
+}
