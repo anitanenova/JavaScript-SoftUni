@@ -1,7 +1,7 @@
 .course-main {
   display: grid;
   @include for-phone-only {
-    grid-template-rows: 302px 562px 970px 540px;
+    grid-template-rows: 302px 562px 970px 540px 760px;
   }
 
   &__welcome-section {
@@ -72,6 +72,74 @@
 
     &__description {
       margin: 0;
+    }
+  }
+
+  &__training-program {
+    background-color: $secondary-400;
+    color: $gray-700;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -6px;
+      width: 100%;
+      height: calc(100% + 12px);
+      border-top: dotted 12px #ffffff;
+      border-bottom: dotted 12px #ffffff;
+    }
+
+    @include for-phone-only {
+      .page-content-wrapper {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-row-gap: 32px;
+      }
+    }
+
+    &__description__title--wrapper {
+      display: flex;
+      align-items: start;
+      margin-bottom: 24px;
+    }
+
+    &__description__title {
+      margin: 0 0 0 16px;
+    }
+
+    &__description__text {
+      margin: 0;
+    }
+
+    &__dropdown--wrapper {
+      display: grid;
+      grid-template-rows: auto 52px 52px 94px 72px;
+      grid-row-gap: 16px;
+    }
+
+    &__dropdown__title {
+      margin: 0;
+    }
+
+    &__dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        background: url("../../assets/icons/mdi_keyboard_arrow_down.png") center
+          no-repeat;
+        width: 16px;
+        height: 10px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+      }
     }
   }
 }

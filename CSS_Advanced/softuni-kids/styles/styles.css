@@ -421,7 +421,7 @@ summary {
   }
 }
 
-select {
+.filter select {
   background-color: #f8f8f8;
   border: 1px solid #ff9100;
   -webkit-box-sizing: border-box;
@@ -433,24 +433,66 @@ select {
   min-height: 45px;
 }
 
-select:hover {
+.filter select:hover {
   cursor: pointer;
 }
 
-select::-webkit-input-placeholder {
+.filter select::-webkit-input-placeholder {
   color: #919191;
 }
 
-select:-ms-input-placeholder {
+.filter select:-ms-input-placeholder {
   color: #919191;
 }
 
-select::-ms-input-placeholder {
+.filter select::-ms-input-placeholder {
   color: #919191;
 }
 
-select::placeholder {
+.filter select::placeholder {
   color: #919191;
+}
+
+.training-program-select select {
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 40px 14px 14px;
+  min-width: 335px;
+  min-height: 52px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  color: #565656;
+  width: 100%;
+  word-wrap: break-word;
+  text-overflow: inherit;
+  -webkit-appearance: none;
+  white-space: normal;
+  height: -webkit-fill-available;
+}
+
+.training-program-select select > option {
+  width: 100%;
+}
+
+.training-program-select select:hover {
+  cursor: pointer;
+}
+
+.training-program-select select::-webkit-input-placeholder {
+  color: #565656;
+}
+
+.training-program-select select:-ms-input-placeholder {
+  color: #565656;
+}
+
+.training-program-select select::-ms-input-placeholder {
+  color: #565656;
+}
+
+.training-program-select select::placeholder {
+  color: #565656;
 }
 
 .horizontal-border {
@@ -2484,8 +2526,8 @@ button {
 
 @media (max-width: 599px) {
   .course-main {
-    -ms-grid-rows: 302px 562px 970px 540px;
-        grid-template-rows: 302px 562px 970px 540px;
+    -ms-grid-rows: 302px 562px 970px 540px 760px;
+        grid-template-rows: 302px 562px 970px 540px 760px;
   }
 }
 
@@ -2578,6 +2620,89 @@ button {
 
 .course-main__about-more-info__description {
   margin: 0;
+}
+
+.course-main__training-program {
+  background-color: #ffcb29;
+  color: #565656;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course-main__training-program::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 100%;
+  height: calc(100% + 12px);
+  border-top: dotted 12px #ffffff;
+  border-bottom: dotted 12px #ffffff;
+}
+
+@media (max-width: 599px) {
+  .course-main__training-program .page-content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 1fr;
+        grid-template-rows: auto 1fr;
+    grid-row-gap: 32px;
+  }
+}
+
+.course-main__training-program__description__title--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-bottom: 24px;
+}
+
+.course-main__training-program__description__title {
+  margin: 0 0 0 16px;
+}
+
+.course-main__training-program__description__text {
+  margin: 0;
+}
+
+.course-main__training-program__dropdown--wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 52px 52px 94px 72px;
+      grid-template-rows: auto 52px 52px 94px 72px;
+  grid-row-gap: 16px;
+}
+
+.course-main__training-program__dropdown__title {
+  margin: 0;
+}
+
+.course-main__training-program__dropdown {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.course-main__training-program__dropdown::after {
+  content: "";
+  background: url("../../assets/icons/mdi_keyboard_arrow_down.png") center no-repeat;
+  width: 16px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
 }
 
 @media (max-width: 599px) {

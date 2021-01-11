@@ -1,18 +1,52 @@
-select {
-  background-color: $gray-50;
-  border: 1px solid $secondary-color;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 12px 18px;
-  -webkit-appearance: none;
-  min-width: 200px;
-  min-height: 45px;
+.filter {
+  select {
+    background-color: $gray-50;
+    border: 1px solid $secondary-color;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 18px;
+    -webkit-appearance: none;
+    min-width: 200px;
+    min-height: 45px;
 
-  &:hover {
-    cursor: pointer;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::placeholder {
+      color: $gray-500;
+    }
   }
+}
 
-  &::placeholder {
-    color: $gray-500;
+.training-program-select {
+  select {
+    border: 0;
+    box-sizing: border-box;
+
+    padding: 14px 40px 14px 14px;
+    min-width: 335px;
+    min-height: 52px;
+    background-color: #ffffff;
+    border-radius: $secondary-radius;
+    color: $gray-700;
+    width: 100%;
+    word-wrap: break-word;
+    text-overflow: inherit;
+    -webkit-appearance: none;
+    white-space: normal;
+    height: -webkit-fill-available;
+
+    & > option {
+      width: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::placeholder {
+      color: $gray-700;
+    }
   }
 }
