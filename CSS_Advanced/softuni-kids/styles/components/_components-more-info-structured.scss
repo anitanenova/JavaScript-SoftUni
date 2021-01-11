@@ -1,0 +1,27 @@
+.more-info-structured {
+  display: flex;
+  align-items: center;
+
+  .page-content-wrapper {
+    display: grid;
+  }
+
+  &__title--wrapper {
+    display: flex;
+    align-items: start;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    color: $gray-700;
+    margin: 0 0 0 18px;
+  }
+
+  &__description--wrapper {
+    margin: 0;
+  }
+
+  &__description {
+    margin: 0;
+  }
+}

@@ -1,7 +1,7 @@
 .course-main {
   display: grid;
   @include for-phone-only {
-    grid-template-rows: 302px 562px 970px 540px 760px;
+    grid-template-rows: 302px 562px 970px 540px 760px 1300px;
   }
 
   &__welcome-section {
@@ -42,36 +42,12 @@
     }
   }
 
-  &__about-more-info {
-    display: flex;
-    align-items: center;
-
+  &__about__more-info-stuctured__appropriate-and-important {
     .page-content-wrapper {
-      display: grid;
-
       @include for-phone-only {
         grid-template-rows: auto 10px 1fr;
         grid-row-gap: 32px;
       }
-    }
-
-    &__title--wrapper {
-      display: flex;
-      align-items: start;
-      margin-bottom: 16px;
-    }
-
-    &__title {
-      color: $gray-700;
-      margin: 0 0 0 18px;
-    }
-
-    &__description--wrapper {
-      margin: 0;
-    }
-
-    &__description {
-      margin: 0;
     }
   }
 
@@ -139,6 +115,23 @@
         display: inline-block;
         position: absolute;
         right: 20px;
+      }
+    }
+  }
+
+  &__about__more-info-stuctured__shedule-and-info {
+    padding: 60px 0 96px 0;
+    height: 100%;
+    box-sizing: border-box;
+
+    .more-info-structured__description:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    .page-content-wrapper {
+      @include for-phone-only {
+        grid-template-rows: auto 10px auto;
+        grid-row-gap: 32px;
       }
     }
   }
