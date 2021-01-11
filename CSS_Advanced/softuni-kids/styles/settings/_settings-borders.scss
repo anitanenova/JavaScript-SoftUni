@@ -1,29 +1,25 @@
 .border {
-  background-size: contain;
-  box-sizing: border-box;
-  display: block;
+  &--primary-50 {
+    color: $primary-50;
 
-  &-vertical {
-    background-repeat: repeat-y;
-
-    &--primary {
-      background-image: url("../../assets/icons/dot-vertical.png");
+    &--vertical {
+      border-left: dotted 12px;
     }
 
-    &--secondary--100 {
-      background-image: url("../../assets/icons/ellipse-yellow-vertical.png");
+    &--horizontal {
+      border-top: dotted 12px;
     }
   }
 
-  &-horizontal {
-    background-repeat: repeat-x;
+  &--secondary-100 {
+    color: $secondary-100;
 
-    &--primary {
-      background-image: url("../../assets/icons/dot-horizontal.png");
+    &--vertical {
+      border-left: dotted 12px;
     }
 
-    &--secondary--100 {
-      background-image: url("../../assets/icons/ellipse-yellow-horizontal.png");
+    &--horizontal {
+      border-top: dotted 12px;
     }
   }
 }

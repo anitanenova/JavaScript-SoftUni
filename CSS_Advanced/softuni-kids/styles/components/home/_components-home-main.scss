@@ -1,6 +1,6 @@
 .home-main {
   display: grid;
-  grid-template-rows: 490px 565px 1210px 485px 170px 505px 330px 516px 500px 740px 1600px;
+  grid-template-rows: 490px 565px 1240px 485px 170px 505px 330px 516px 500px 740px 1600px;
 
   &__welcome-section {
     background-image: url("../../assets/images/main-kids.jpg");
@@ -64,7 +64,7 @@
 
   &__programs {
     .page-content-wrapper {
-      margin: 95px auto;
+      margin: 95px auto 0 auto;
     }
 
     &-info {
