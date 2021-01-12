@@ -5,15 +5,15 @@
   }
 
   @include for-tablet-portrait-up {
-    grid-template-rows: 302px 562px 740px 500px 680px 1300px;
+    grid-template-rows: 302px 562px 740px 500px 680px 1100px;
   }
 
   @include for-tablet-landscape-up {
-    grid-template-rows: 302px 562px 575px 410px 680px 1300px;
+    grid-template-rows: 302px 562px 575px 410px 680px 750px;
   }
 
   @include for-desktop-up {
-    grid-template-rows: 302px 150px 340px 330px 490px 1300px;
+    grid-template-rows: 302px 150px 340px 330px 490px 600px;
   }
 
   &__welcome-section {

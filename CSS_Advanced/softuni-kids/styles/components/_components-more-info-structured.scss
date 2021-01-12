@@ -21,7 +21,7 @@
 
     @include for-tablet-landscape-up {
       grid-template-columns: 1fr 12px 1fr;
-      grid-column-gap: 90px;
+      grid-column-gap: 40px;
       grid-template-rows: 1fr;
 
       .border--secondary-100--horizontal {

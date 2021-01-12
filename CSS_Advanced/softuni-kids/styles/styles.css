@@ -2973,22 +2973,22 @@ button {
 
 @media (min-width: 600px) {
   .course-main {
-    -ms-grid-rows: 302px 562px 740px 500px 680px 1300px;
-        grid-template-rows: 302px 562px 740px 500px 680px 1300px;
+    -ms-grid-rows: 302px 562px 740px 500px 680px 1100px;
+        grid-template-rows: 302px 562px 740px 500px 680px 1100px;
   }
 }
 
 @media (min-width: 900px) {
   .course-main {
-    -ms-grid-rows: 302px 562px 575px 410px 680px 1300px;
-        grid-template-rows: 302px 562px 575px 410px 680px 1300px;
+    -ms-grid-rows: 302px 562px 575px 410px 680px 750px;
+        grid-template-rows: 302px 562px 575px 410px 680px 750px;
   }
 }
 
 @media (min-width: 1200px) {
   .course-main {
-    -ms-grid-rows: 302px 150px 340px 330px 490px 1300px;
-        grid-template-rows: 302px 150px 340px 330px 490px 1300px;
+    -ms-grid-rows: 302px 150px 340px 330px 490px 600px;
+        grid-template-rows: 302px 150px 340px 330px 490px 600px;
   }
 }
 
@@ -3234,6 +3234,9 @@ button {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     justify-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
@@ -3241,6 +3244,9 @@ button {
   .course-more-info-table .page-content-wrapper {
     -ms-grid-rows: 145px 12px 405px;
         grid-template-rows: 145px 12px 405px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
@@ -3622,7 +3628,7 @@ button {
   .more-info-structured .page-content-wrapper {
     -ms-grid-columns: 1fr 12px 1fr;
         grid-template-columns: 1fr 12px 1fr;
-    grid-column-gap: 90px;
+    grid-column-gap: 40px;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
   }

@@ -16,10 +16,12 @@
 
       grid-template-columns: 1fr;
       justify-items: center;
+      width: fit-content;
     }
 
     @include for-tablet-landscape-up {
       grid-template-rows: 145px 12px 405px;
+      width: fit-content;
     }
 
     @include for-desktop-up {
