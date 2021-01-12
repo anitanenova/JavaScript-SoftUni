@@ -15,15 +15,134 @@
     align-items: center;
   }
 
-  &__arrow {
+  &__arrow--black {
     margin-right: 14px;
+    @include for-phone-only {
+      display: block;
+    }
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+
+  &__arrow--secondary {
+    margin-right: 14px;
+    @include for-phone-only {
+      display: none;
+    }
+
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+
+    @include for-tablet-landscape-up {
+      display: none;
+    }
+
+    @include for-desktop-up {
+      display: block;
+      margin-left: 24px;
+    }
+  }
+
+  &__logo--small {
+    @include for-phone-only {
+      display: block;
+    }
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+
+  &__logo--big {
+    @include for-phone-only {
+      display: none;
+    }
+
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+
+    @include for-tablet-landscape-up {
+      display: none;
+    }
+
+    @include for-desktop-up {
+      display: block;
+    }
+  }
+
+  &__nav-and-login {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav__list {
+    @include for-phone-only {
+      display: none;
+    }
+
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+
+    @include for-tablet-landscape-up {
+      display: none;
+    }
+
+    @include for-desktop-up {
+      display: flex;
+      flex-direction: row;
+
+      &-item {
+        margin: auto 24px auto 0;
+      }
+
+      &-item-link {
+        color: $gray-700;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: auto 12px;
+
+        &:hover {
+          cursor: pointer;
+          animation: change-color-grey-to-secondary 0.3s ease-out forwards;
+        }
+      }
+    }
+  }
+
+  &__search__link {
+    @include for-phone-only {
+      display: none;
+    }
+
+    @include for-tablet-portrait-up {
+      display: none;
+    }
+
+    @include for-tablet-landscape-up {
+      display: none;
+    }
+
+    @include for-desktop-up {
+      display: block;
+      margin-right: 32px;
+    }
   }
 
   &__login {
     margin-right: 24px;
   }
 
-  @include for-phone-only {
+  &__nav-icon--wrapper {
+    @include for-phone-only {
+      display: block;
+    }
+
+    @include for-desktop-up {
+      display: none;
+    }
   }
 }
 
