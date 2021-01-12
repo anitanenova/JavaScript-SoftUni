@@ -4,6 +4,18 @@
     grid-template-rows: 302px 562px 970px 540px 760px 1300px;
   }
 
+  @include for-tablet-portrait-up {
+    grid-template-rows: 302px 562px 970px 540px 760px 1300px;
+  }
+
+  @include for-tablet-landscape-up {
+    grid-template-rows: 302px 562px 970px 540px 760px 1300px;
+  }
+
+  @include for-desktop-up {
+    grid-template-rows: 302px 562px 970px 540px 760px 1300px;
+  }
+
   &__welcome-section {
     background-color: $blue-400;
     color: #ffffff;
@@ -15,6 +27,19 @@
       grid-template-columns: 1fr;
       justify-items: center;
       text-align: center;
+
+      @include for-desktop-up {
+        max-width: 650px;
+        text-align: center;
+      }
+    }
+
+    &__title {
+      @include for-desktop-up {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+      }
     }
   }
 
