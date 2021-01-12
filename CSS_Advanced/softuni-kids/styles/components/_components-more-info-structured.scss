@@ -4,6 +4,47 @@
 
   .page-content-wrapper {
     display: grid;
+
+    @include for-tablet-portrait-up {
+      grid-template-rows: 1fr 12px 1fr;
+      grid-row-gap: 35px;
+      grid-template-columns: 1fr;
+
+      .border--secondary-100--horizontal {
+        display: block;
+      }
+
+      .border--secondary-100--vertical {
+        display: none;
+      }
+    }
+
+    @include for-tablet-landscape-up {
+      grid-template-columns: 1fr 12px 1fr;
+      grid-column-gap: 90px;
+      grid-template-rows: 1fr;
+
+      .border--secondary-100--horizontal {
+        display: none;
+      }
+
+      .border--secondary-100--vertical {
+        display: block;
+      }
+    }
+
+    @include for-desktop-up {
+      grid-template-columns: 1fr 12px 1fr;
+      grid-column-gap: 90px;
+
+      .border--secondary-100--horizontal {
+        display: none;
+      }
+
+      .border--secondary-100--vertical {
+        display: block;
+      }
+    }
   }
 
   &__title--wrapper {

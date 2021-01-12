@@ -2973,15 +2973,15 @@ button {
 
 @media (min-width: 600px) {
   .course-main {
-    -ms-grid-rows: 302px 562px 715px 540px 760px 1300px;
-        grid-template-rows: 302px 562px 715px 540px 760px 1300px;
+    -ms-grid-rows: 302px 562px 740px 500px 760px 1300px;
+        grid-template-rows: 302px 562px 740px 500px 760px 1300px;
   }
 }
 
 @media (min-width: 900px) {
   .course-main {
-    -ms-grid-rows: 302px 562px 550px 540px 760px 1300px;
-        grid-template-rows: 302px 562px 550px 540px 760px 1300px;
+    -ms-grid-rows: 302px 562px 575px 410px 760px 1300px;
+        grid-template-rows: 302px 562px 575px 410px 760px 1300px;
   }
 }
 
@@ -3583,6 +3583,52 @@ button {
 .more-info-structured .page-content-wrapper {
   display: -ms-grid;
   display: grid;
+}
+
+@media (min-width: 600px) {
+  .more-info-structured .page-content-wrapper {
+    -ms-grid-rows: 1fr 12px 1fr;
+        grid-template-rows: 1fr 12px 1fr;
+    grid-row-gap: 35px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .more-info-structured .page-content-wrapper .border--secondary-100--horizontal {
+    display: block;
+  }
+  .more-info-structured .page-content-wrapper .border--secondary-100--vertical {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .more-info-structured .page-content-wrapper {
+    -ms-grid-columns: 1fr 12px 1fr;
+        grid-template-columns: 1fr 12px 1fr;
+    grid-column-gap: 90px;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .more-info-structured .page-content-wrapper .border--secondary-100--horizontal {
+    display: none;
+  }
+  .more-info-structured .page-content-wrapper .border--secondary-100--vertical {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .more-info-structured .page-content-wrapper {
+    -ms-grid-columns: 1fr 12px 1fr;
+        grid-template-columns: 1fr 12px 1fr;
+    grid-column-gap: 90px;
+  }
+  .more-info-structured .page-content-wrapper .border--secondary-100--horizontal {
+    display: none;
+  }
+  .more-info-structured .page-content-wrapper .border--secondary-100--vertical {
+    display: block;
+  }
 }
 
 .more-info-structured__title--wrapper {
