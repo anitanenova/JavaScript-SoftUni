@@ -6,17 +6,24 @@
     height: fit-content;
   }
 
+  @include for-desktop-up {
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+
   &__image {
     width: 175px;
     height: 175px;
     border-radius: 50%;
     border: 6px solid $primary-300;
     justify-self: center;
+
+    margin-bottom: 32px;
   }
 
   &__name {
     color: $primary-300;
-    margin: 32px auto 8px auto;
+    margin: 0 auto 8px auto;
   }
 
   &__position {
