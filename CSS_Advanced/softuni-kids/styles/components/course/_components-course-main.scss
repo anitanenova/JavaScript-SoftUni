@@ -17,29 +17,11 @@
   }
 
   &__welcome-section {
-    background-color: $blue-400;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-
     .page-content-wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
       text-align: center;
-
-      @include for-desktop-up {
-        max-width: 650px;
-        text-align: center;
-      }
-    }
-
-    &__title {
-      @include for-desktop-up {
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 44px;
-      }
     }
   }
 

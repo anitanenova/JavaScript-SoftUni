@@ -2,13 +2,17 @@
   color: #ffffff;
   position: relative;
   z-index: -1;
-  height: 350px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   &--secondary {
     background-color: $secondary-color;
+  }
+
+  &--blue-400 {
+    background-color: $blue-400;
   }
 
   &__content {
