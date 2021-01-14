@@ -21,5 +21,10 @@ In CSS Advanced:
         <li><p>Includes header, main and footer made with CSS Flexbox</p></li>
       </ul>
     </li>
+     <li>Course page
+      <ul>
+        <li><p>Includes header, main and footer made with the perfect combination between CSS Flexbox and CSS Grid</p></li>
+      </ul>
+    </li>
   </ul>
 </details>
