@@ -2983,20 +2983,6 @@ button {
   }
 }
 
-.course-main__welcome-section .page-content-wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
 .course-main__more-info-section {
   position: relative;
   top: -65px;
@@ -3651,7 +3637,8 @@ button {
   color: #ffffff;
   position: relative;
   z-index: -1;
-  height: 300px;
+  height: 100%;
+  min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3667,8 +3654,26 @@ button {
   background-color: #ff9100;
 }
 
+.welcome-section--secondary-600 {
+  background-color: #ffb402;
+}
+
 .welcome-section--blue-400 {
   background-color: #44a9f8;
+}
+
+.welcome-section .page-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .welcome-section__content {
@@ -3684,7 +3689,82 @@ button {
 }
 
 .welcome-section__content__title {
-  margin-top: 0;
+  margin: 0 auto 24px auto;
+}
+
+.welcome-section__content__description {
+  margin: 0;
+}
+
+.trainers-main {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 599px) {
+  .trainers-main {
+    -ms-grid-rows: 356px 1500px;
+        grid-template-rows: 356px 1500px;
+  }
+}
+
+.trainers-main__general-managers .page-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 599px) {
+  .trainers-main__general-managers .page-content-wrapper {
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-row-gap: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-top: 40px;
+  }
+}
+
+.business-card {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 599px) {
+  .business-card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+.business-card__image {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  border: 6px solid #41bead;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.business-card__name {
+  color: #41bead;
+  margin: 32px auto 8px auto;
+}
+
+.business-card__position {
+  color: #b2b2b2;
+  margin: 0 auto 24px auto;
+}
+
+.business-card__description {
+  color: #565656;
+  margin: 0;
 }
 
 .centered {

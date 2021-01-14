@@ -1,0 +1,21 @@
+.trainers-main {
+  display: grid;
+
+  @include for-phone-only {
+    grid-template-rows: 356px 1500px;
+  }
+
+  &__general-managers {
+    .page-content-wrapper {
+      display: grid;
+
+      @include for-phone-only {
+        grid-template-rows: auto auto;
+        grid-row-gap: 40px;
+        align-items: center;
+        height: fit-content;
+        margin-top: 40px;
+      }
+    }
+  }
+}

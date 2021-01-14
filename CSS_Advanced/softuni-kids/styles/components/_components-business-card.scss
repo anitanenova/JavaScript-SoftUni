@@ -1,0 +1,31 @@
+.business-card {
+  display: grid;
+
+  @include for-phone-only {
+    grid-template-columns: 1fr;
+    height: fit-content;
+  }
+
+  &__image {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border: 6px solid $primary-300;
+    justify-self: center;
+  }
+
+  &__name {
+    color: $primary-300;
+    margin: 32px auto 8px auto;
+  }
+
+  &__position {
+    color: $gray-400;
+    margin: 0 auto 24px auto;
+  }
+
+  &__description {
+    color: $gray-700;
+    margin: 0;
+  }
+}
