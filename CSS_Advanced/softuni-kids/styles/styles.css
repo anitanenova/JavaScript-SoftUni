@@ -3668,22 +3668,44 @@ button {
   margin: 0;
 }
 
-.welcome-section--wrapper {
-  background-color: #ff9100;
+.welcome-section {
   color: #ffffff;
-  padding: 60px 0;
-  text-align: center;
   position: relative;
   z-index: -1;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.welcome-section--secondary {
+  background-color: #ff9100;
+}
+
+.welcome-section__content {
+  width: 100%;
+}
+
+.welcome-section__content--small {
+  max-width: 650px;
+}
+
+.welcome-section__content--medium {
+  max-width: 850px;
+}
+
+.welcome-section__content__title {
+  margin-top: 0;
 }
 
 .centered {
   text-align: center;
-}
-
-.centered__container {
-  width: 44%;
-  margin: 0 auto;
 }
 
 .fade-in {

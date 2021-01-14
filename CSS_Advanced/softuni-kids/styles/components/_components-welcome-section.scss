@@ -1,8 +1,29 @@
-.welcome-section--wrapper {
-  background-color: $secondary-color;
+.welcome-section {
   color: #ffffff;
-  padding: 60px 0;
-  text-align: center;
   position: relative;
   z-index: -1;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &--secondary {
+    background-color: $secondary-color;
+  }
+
+  &__content {
+    width: 100%;
+
+    &--small {
+      max-width: 650px;
+    }
+
+    &--medium {
+      max-width: 850px;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+  }
 }
