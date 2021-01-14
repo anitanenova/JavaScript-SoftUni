@@ -21,11 +21,11 @@
 
   &__position {
     color: $gray-400;
-    margin: 0 auto 24px auto;
+    margin: 0 auto;
   }
 
   &__description {
     color: $gray-700;
-    margin: 0;
+    margin: 24px auto 0 auto;
   }
 }
