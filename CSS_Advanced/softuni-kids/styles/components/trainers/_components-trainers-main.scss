@@ -2,7 +2,7 @@
   display: grid;
 
   @include for-phone-only {
-    grid-template-rows: 356px 1500px 12px 1360px;
+    grid-template-rows: 356px 1500px 12px 1360px 675px;
   }
 
   &__general-managers {
@@ -31,5 +31,8 @@
         grid-row-gap: 48px;
       }
     }
+  }
+
+  &__partnership-section {
   }
 }

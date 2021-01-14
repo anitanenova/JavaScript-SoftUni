@@ -743,6 +743,13 @@ button {
   font-weight: 400;
 }
 
+input {
+  background-color: transparent;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 16px;
+}
+
 .btn {
   border-radius: 100px;
   border: none;
@@ -3703,8 +3710,8 @@ button {
 
 @media (max-width: 599px) {
   .trainers-main {
-    -ms-grid-rows: 356px 1500px 12px 1360px;
-        grid-template-rows: 356px 1500px 12px 1360px;
+    -ms-grid-rows: 356px 1500px 12px 1360px 675px;
+        grid-template-rows: 356px 1500px 12px 1360px 675px;
   }
 }
 
@@ -3787,6 +3794,68 @@ button {
 .business-card__description {
   color: #565656;
   margin: 24px auto 0 auto;
+}
+
+.partnership-section {
+  background-color: #66b9f8;
+  border-top: 12px solid #92cdfb;
+  color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  height: 100%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media (max-width: 599px) {
+  .partnership-section .page-content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: min-content min-content min-content;
+        grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content min-content;
+    grid-row-gap: 45px;
+    height: 100%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+.partnership-section__description__title {
+  margin: 0 auto 24px auto;
+  text-align: left;
+}
+
+.partnership-section__description__text {
+  margin: 0;
+}
+
+@media (max-width: 599px) {
+  .partnership-section__form {
+    display: -ms-grid;
+    display: grid;
+    grid-row-gap: 36px;
+  }
+}
+
+.partnership-section__form__input {
+  color: #ffffff;
+}
+
+.partnership-section__form__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.partnership-section__form__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.partnership-section__form__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.partnership-section__form__input::placeholder {
+  color: #ffffff;
 }
 
 .centered {
