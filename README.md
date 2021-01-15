@@ -8,7 +8,7 @@ In CSS Advanced:
 <!-- PAGE CONTENT -->
 <details open="open">
   <summary> 
-    1. project <a href="https://github.com/anitanenova/JavaScript-SoftUni/tree/main/CSS_Advanced/softuni-kids">"SoftUni Kids"
+    1. project <a href="https://github.com/anitanenova/JavaScript-SoftUni/tree/main/CSS_Advanced_July_2020/softuni-kids">"SoftUni Kids"
   </a></summary>
   <ul>
     <li>made with CSS Grid
