@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <from>
+        <fieldset>
+            <legend>Customer Details</legend>
+
+            <label>First Name</label>
+            <input type="text" autofocus name="first-name" placeholder="George" />
+
+            <br><br>
+            <label>Last Name</label>
+            <input type="text" name="last-name" placeholder="Devis" />
+            <br><br>
+
+            Male <input type="radio" value="male" name="gender" />
+            Female <input type="radio" value="female" name="gender" />
+            Other<input type="radio" value="other" name="gender" />
+            <br><br>
+
+            <label>
+                Preferred contact method:
+                Email <input type="radio" value="email" name="method" />
+                Phone <input type="radio" value="phone" name="method" />
+            </label>
+            <br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="your@email.com" />
+            <br><br>
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" placeholder="+359885236225" />
+            <br><br>
+
+            <label>Town
+                <select name="towns">
+                    <option value="Varna">Varna</option>
+                    <option value="Burgas">Burgas</option>
+                </select></label>
+            <br><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" min=18 max=70 />
+            <br><br>
+
+            <label>Programming language
+                <input type="text" />
+            </label>
+
+            <br><br>
+
+            <textarea rows="5" cols="20" name="infromation" placeholder="More infromation..."></textarea>
+            <br><br>
+
+            <input type="checkbox" checked /> <label>I agree the Terms and Conditions</label>
+
+            <br><br>
+            <input type="submit" value="Send" />
+        </fieldset>
+    </from>
+</body>
+
+</html>

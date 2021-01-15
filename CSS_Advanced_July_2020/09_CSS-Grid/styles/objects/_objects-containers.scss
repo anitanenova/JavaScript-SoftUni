@@ -1,0 +1,14 @@
+.o-row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &--small {
+    height: 500px;
+  }
+}
+
+.o-full-screen-container {
+  height: 100vh;
+}

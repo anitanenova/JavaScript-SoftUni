@@ -1,9 +1,0 @@
-.text-box {
-  width: 200px;
-  padding: 20px;
-  margin: 20px;
-  display: inline-block;
-  border: 5px solid black;
-  border-radius: 10px;
-  background-color: rgb(64, 224, 208);
-}

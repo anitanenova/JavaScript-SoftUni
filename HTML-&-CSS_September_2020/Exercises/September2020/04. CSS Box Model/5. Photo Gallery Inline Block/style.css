@@ -1,0 +1,14 @@
+.gallery li {
+  list-style: none;
+  border: 0.4rem solid black;
+  margin: 15px;
+  max-width: 550px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+img {
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
