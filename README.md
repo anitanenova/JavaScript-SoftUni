@@ -11,19 +11,21 @@ In CSS Advanced:
     1. project <a href="https://github.com/anitanenova/JavaScript-SoftUni/tree/main/CSS_Advanced/softuni-kids">"SoftUni Kids"
   </a></summary>
   <ul>
-    <li>Home page
+    <li>made with CSS Grid
       <ul>
-        <li><p>Includes header, main and footer made with CSS Grid</p></li>
+        <li><p>Home page</p></li>
       </ul>
     </li>
-    <li>Trainings page
+    <li>made with CSS Flexbox
       <ul>
-        <li><p>Includes header, main and footer made with CSS Flexbox</p></li>
+        <li><p>Trainings page</p></li>
       </ul>
     </li>
-     <li>Course page
+     <li>made with the perfect combination between CSS Flexbox and CSS Grid
       <ul>
-        <li><p>Includes header, main and footer made with the perfect combination between CSS Flexbox and CSS Grid</p></li>
+        <li><p>Course page</p></li>
+        <li><p>Trainers page</p></li>
+        <li><p>Contact us page</p></li>
       </ul>
     </li>
   </ul>
