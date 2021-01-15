@@ -30,4 +30,42 @@
       text-align: center;
     }
   }
+
+  &__transport-instructions {
+    background-color: $secondary-50;
+    display: flex;
+    align-items: center;
+
+    .page-content-wrapper {
+      @include for-desktop-up {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
+    &__title {
+      color: $primary-300;
+      margin: 0 auto 48px auto;
+    }
+
+    &__description--wrapper {
+      @include for-desktop-up {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 35px;
+      }
+    }
+
+    &__description__title {
+      color: $primary-300;
+      margin: 0 0 18px 0;
+    }
+
+    &__description__text {
+      color: $gray-700;
+      margin: 0 0 16px 0;
+    }
+  }
 }
