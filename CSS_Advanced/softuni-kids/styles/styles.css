@@ -284,6 +284,24 @@ summary {
   }
 }
 
+@-webkit-keyframes fade-in-hover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fade-in-hover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
 @-webkit-keyframes change-color-grey-to-secondary {
   from {
     color: #565656;
@@ -3898,14 +3916,52 @@ input {
   }
 }
 
+.business-card__image__content-hover {
+  display: none;
+}
+
 .business-card__image {
   width: 175px;
   height: 175px;
   border-radius: 50%;
   border: 6px solid #41bead;
+}
+
+.business-card__image--wrapper {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
   -ms-grid-column-align: center;
       justify-self: center;
   margin-bottom: 32px;
+}
+
+.business-card__image--wrapper:hover .business-card__image__content-hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 163px;
+  height: 163px;
+  border-radius: 50%;
+  background-color: #ff9100;
+  opacity: 0.8;
+  position: relative;
+  top: -172px;
+  left: 6px;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-animation: fade-in-hover 0.5s forwards ease-out;
+          animation: fade-in-hover 0.5s forwards ease-out;
 }
 
 .business-card__name {

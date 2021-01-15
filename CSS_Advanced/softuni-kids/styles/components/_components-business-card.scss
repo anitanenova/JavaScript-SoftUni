@@ -11,14 +11,47 @@
     height: fit-content;
   }
 
+  &__image__content-hover {
+    display: none;
+  }
+
   &__image {
     width: 175px;
     height: 175px;
     border-radius: 50%;
     border: 6px solid $primary-300;
-    justify-self: center;
+  }
 
+  &__image--wrapper {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    justify-self: center;
     margin-bottom: 32px;
+
+    &:hover {
+      .business-card__image__content-hover {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 163px;
+        height: 163px;
+        border-radius: 50%;
+        background-color: $secondary-800;
+        opacity: 0.8;
+
+        position: relative;
+        top: -172px;
+        left: 6px;
+
+        color: #ffffff;
+        text-transform: uppercase;
+
+        animation: fade-in-hover 0.5s forwards ease-out;
+      }
+    }
   }
 
   &__name {
