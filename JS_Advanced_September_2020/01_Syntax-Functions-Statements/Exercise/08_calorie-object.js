@@ -3,9 +3,7 @@ function solve(input) {
 
   for (let i = 0; i < input.length; i++) {
     if (i % 2 == 0) {
-      obj.name = input[i];
-    } else {
-      obj[i - 1] = input[i];
+      obj[input[i]] = Number(input[i + 1]);
     }
   }
 
