@@ -30,4 +30,4 @@ function solve(input) {
   console.log(result);
 }
 
-console.log(solve());
+solve("Monday");
