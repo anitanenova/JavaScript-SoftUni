@@ -1,13 +1,13 @@
 function solve(input) {
-  let bigestNumbers = [];
+  let biggestNumbers = [];
   for (const row of input) {
     row.sort((a, b) => b - a);
-    bigestNumbers.push(row[0]);
+    biggestNumbers.push(row[0]);
   }
 
-  bigestNumbers.sort((a, b) => b - a);
+  biggestNumbers.sort((a, b) => b - a);
 
-  console.log(bigestNumbers[0]);
+  console.log(biggestNumbers[0]);
 }
 
 solve([
