@@ -9,9 +9,7 @@ function solve(matrix) {
   console.log(diagonal1 + " " + diagonal2);
 }
 
-console.log(
-  solve([
-    [20, 40],
-    [10, 60],
-  ])
-);
+solve([
+  [20, 40],
+  [10, 60],
+]);
