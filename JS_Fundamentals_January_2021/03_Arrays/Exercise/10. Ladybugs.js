@@ -1,27 +1,45 @@
 function solve(arr) {
-  let field = arr.shift();
-  let indexes = arr.shift().split(" ");
+  let field = new Array(arr.shift()).fill(0);
+  const indexes = arr
+    .shift()
+    .split(" ")
+    .map((x) => Number(x));
 
-  let newArr = [];
+  indexes.forEach((x) => {
+    if (field[x] !== undefined) field[x] = 1;
+  });
 
-  for (let i = 0; i < field; i++) {
-    if (indexes.length > 0) {
-      newArr.push(1);
-      indexes.length--;
-    } else {
-      newArr.push(0);
-    }
-  }
-
-  for (let j = 0; j < arr.length; j++) {
-    let [index, direction, flyLength] = arr[i];
-
-    if (direction == "right") {
-      if (index == 0) {
+  function moveLeft(arr, index) {
+    for (let i = index; i >= 0; i -= index) {
+      if (arr[i] === 0) {
+        arr[i] = 1;
+        break;
       }
     }
+    return arr;
+  }
+  function moveRight(arr, index) {
+    for (let i = index; i < arr.length; i += index) {
+      if (arr[i] === 0) {
+        arr[i] = 1;
+        break;
+      }
+    }
+    return arr;
   }
 
-  console.log(newArr);
+  arr.forEach((x) => {
+    let [index, direction, flyLength] = x.split(" ");
+    index = Number(index);
+    flyLength = Number(flyLength);
+    if (field[index] !== 0 && field[index] !== undefined) {
+      field[index] = 0;
+      direction === "left"
+        ? (field = moveLeft(field, index - flyLength))
+        : (field = moveRight(field, index + flyLength));
+    }
+  });
+
+  return field.join(" ");
 }
-solve([3, "0 1", "0 right 1", "2 right 1"]);
+solve([5, "3", "3 left 2", "1 left -2"]);
