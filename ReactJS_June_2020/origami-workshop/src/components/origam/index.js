@@ -13,7 +13,7 @@ const Origam = ({ description, autor, index }) => {
       <div>
         <span className={styles.user}>
           <small>Autor: </small>
-          {autor}
+          {autor.username}
         </span>
       </div>
     </div>

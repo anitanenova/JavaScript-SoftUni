@@ -15,8 +15,9 @@ class Origamis extends Component {
       "https://origami-workshop-default-rtdb.firebaseio.com/.json"
     );
 
-    const origamis = await promise.json();
+    let origamis = await promise.json();
 
+    origamis = Object.values(origamis);
     this.setState({
       origamis,
     });
@@ -24,14 +25,14 @@ class Origamis extends Component {
 
   renderOrigamis(countOrigamis) {
     const { origamis } = this.state;
-    let someOrigamis = Object.values(origamis);
+
     if (countOrigamis != "all") {
-      if (someOrigamis.length > 0) {
-        someOrigamis.splice(countOrigamis);
+      if (origamis.length > 0) {
+        origamis.splice(countOrigamis);
       }
     }
 
-    return someOrigamis.map((origam, index) => {
+    return origamis.map((origam, index) => {
       return <Origam key={origam.id} index={index} {...origam} />;
     });
   }
