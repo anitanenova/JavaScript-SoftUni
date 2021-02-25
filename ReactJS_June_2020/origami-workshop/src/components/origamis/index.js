@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Origam from "../origam";
+import Origam from "../../components/origam";
 import styles from "./index.module.css";
 class Origamis extends Component {
   constructor(props) {
@@ -22,9 +22,16 @@ class Origamis extends Component {
     });
   };
 
-  renderOrigamis() {
+  renderOrigamis(countOrigamis) {
     const { origamis } = this.state;
-    return Object.values(origamis).map((origam, index) => {
+    let someOrigamis = Object.values(origamis);
+    if (countOrigamis != "all") {
+      if (someOrigamis.length > 0) {
+        someOrigamis.splice(countOrigamis);
+      }
+    }
+
+    return someOrigamis.map((origam, index) => {
       return <Origam key={origam.id} index={index} {...origam} />;
     });
   }
@@ -35,11 +42,8 @@ class Origamis extends Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <h1 className={styles.title}>Origamis</h1>
-        <div className={styles["origamis-wrapper"]}>
-          {this.renderOrigamis()}
-        </div>
+      <div className={styles["origamis-wrapper"]}>
+        {this.renderOrigamis(this.props.countOrigamis)}
       </div>
     );
   }

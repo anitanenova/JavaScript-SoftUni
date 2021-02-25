@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "../link";
+import LinkComponent from "../link";
 import imageLogo from "../../images/blue-origami-bird-flipped.png";
 import styles from "./index.module.css";
 import getNavigation from "../../utils/navigation";
@@ -12,7 +12,8 @@ const Footer = () => {
       <div>
         {links.map((navElement) => {
           return (
-            <Link
+            <LinkComponent
+              key={navElement.title}
               href={navElement.link}
               title={navElement.title}
               type="footer"
