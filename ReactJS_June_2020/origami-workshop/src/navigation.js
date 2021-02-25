@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter, Switch, Route, Router } from "react-router-dom";
 import ErrorPage from "./pages/error";
 import LoginPage from "./pages/login";
@@ -21,4 +21,29 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+const LazyPublications = React.lazy(() => import("./pages/publications"));
+const LazyShareThoughtsPage = React.lazy(() =>
+  import("./pages/share-thoughts")
+);
+const LazyRegisterPage = React.lazy(() => import("./pages/register"));
+const LazyLoginPage = React.lazy(() => import("./pages/login"));
+const LazyProfilePage = React.lazy(() => import("./pages/profile"));
+
+const LazyNavigation = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Suspense fallback={<h1>Loading...</h1>}>
+          <Route path="/" exact component={LazyPublications} />
+          <Route path="/share" component={LazyShareThoughtsPage} />
+          <Route path="/register" component={LazyRegisterPage} />
+          <Route path="/login" component={LazyLoginPage} />
+          <Route path="/profile/:id" component={LazyProfilePage} />
+          <Route component={ErrorPage} />
+        </Suspense>
+      </Switch>
+    </BrowserRouter>
+  );
+};
+
+export default LazyNavigation;
