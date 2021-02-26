@@ -37,5 +37,3 @@ function solve(input) {
 
   return result;
 }
-
-console.log(solve(["1 2 3 4 5", "Strike 0 1", "End"]));
